@@ -6,15 +6,11 @@ int main(){
     cout<<"Enter num:";
     cin>>num;
 
-    if(num>0){
-        cout<<"Positive";
-    }
-    else if(num<0){
-        cout<<"Negative";
+    if(num%2==0){
+        cout<<"Even";
     }
     else{
-        cout<<"Zero";
+        cout<<"Odd";
     }
-
     return 0;
 }
