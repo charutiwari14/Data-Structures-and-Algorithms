@@ -2,15 +2,15 @@
 using namespace std;
 
 int main(){
-    int num=456487565;
+    int n=1054;
     int sum=0;
 
-    while (num>0)
+    while (n>0)//n!=0 if n is negative
     {
-        int digit=num%10;
+        int digit=n%10;
         sum=sum+digit;
-        num=num/10;
+        n=n/10;
     }
     
-    cout<<"Sum of digits in num: "<<sum;
+    cout<<"Sum of digits in n: "<<sum;
 }

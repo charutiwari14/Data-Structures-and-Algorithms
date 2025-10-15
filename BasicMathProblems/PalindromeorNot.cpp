@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int num=12345432;
+    int num=123454321;
     int temp=num;
     int reverse=0;
     while(num>0){
@@ -17,4 +17,4 @@ int main(){
     else{
         cout<<"Not palindrome";
     }
-}
+} 
