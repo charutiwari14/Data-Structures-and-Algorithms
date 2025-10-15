@@ -18,7 +18,9 @@ void printArray(int arr[],int size){
 
 int main(){
     // //Array is a data structure that stores similar type of data
-    // //Array demands continous memory location to store the data  
+    // //Array demands continous memory location to store the data 
+    //Array follows 0 to size-1 based indexing
+
     // //To create an array:
     // //datatype arrayname[size];
     // //datatype arrayname[]={arrayelementsseperated using commas};
@@ -33,26 +35,28 @@ int main(){
     // double err[112];
     // //Q)Create an array that can store 51 boolean values
     // bool frr[51];
-    //Q)Maximum value of size can be ________.  
+    //Q)Maximum value of size can be INT_MAX/4.  
+
     // //Lets look at the scenario detailed below
     // int arr[5];
     // cout<<arr[2];//--> Garbage value
     // int arr[]={10,20,30,40,50};
     // // To find size of an array
     // int size=sizeof(arr)/sizeof(arr[0]);
-    // //Calling function while giving array and its size
-    // printArray(arr,size);
     
     //Default behaviour of an array:If we *initialise* an array having 'n' elements with value at a few indexes only => the elements on remaining indexes would be 0.
     //If we *take an input* for a few numbers of indices only=> the rest would be garbage value
+    
+    // // // //arr[i]=i[arr] but follow arr[i] only
+    
+    int arr[5];
+    //Passing array in a  function: Pass by reference
+    //printArray(arr,5); 
     // int brr[10];
     // printArray(brr,10);
-    //Array follows 0 to size-1 based indexing
-    // // // //arr[i]=i[arr] but follow arr[i] only
-
-    int arr[5];
-    // printArray(arr,5);
-
+    // //Calling function while giving array and its size:fn_name(arrayname,size);
+    
+    
     //To print base address of arr
     cout<<arr;
 
